@@ -280,6 +280,27 @@ if parser.parse_args().debug:
     print("Script is configured to run on poller id " + config_poller_id)
     print("Poller interval is: " + str(poller_interveral))
     print("\n")
+    print("Notification settings")
+    print("\n")
+    if execute_script == "y":
+        print("script execution is enabled")
+        print("script path is: " + path_to_script)
+        print("\n")
+    if email_enabled == "y":
+        print("email is enabled")
+        print("email address is: " + admin_email)
+        print("\n")
+    if slack_enabled == "y":
+        print("slack is enabled")
+        print("slack webhook url is: " + slack_webhook_url)
+        print("\n")
+    if syslog_enabled == "y":
+        print("syslog is enabled")
+        print("syslog server is: " + syslog_server)
+        print("syslog program is: " + syslog_program)
+        print("\n")
+    print("\n")
+
 
     print("SQL query run for Down Device: " + device_down)
     print("\n")
